@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Alata', sans-serif;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  color: #0262B7;
+}
+
+a {
+  color: #0262B7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#current_page {
+  color: #B65602;
+}
+
+#header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: auto;
+  top: 0;
+  right: 0;
+  left: 18.75rem;
+  background-color: #FFF;
+  border-bottom: 3rem solid #E8F4FF;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  left: 18.75rem;
+}
+
+#huawei_logo_link {
+  display: block;
+  position: fixed;
+  margin-bottom: 2.7rem;
+}
+
+#huawei_logo {
+  width: 200px;
+  position: fixed;
+}
+
+#bar {
+  border: none;
+  border-radius: 5%;
+  width: 2.5rem;
+  height: 0.2rem;
+  background: rgba(0, 22, 22, 0.2);
+  transform: rotate(90deg);
+  position: fixed;
+  margin-top: 0.7rem;
+  margin-left: 13rem;
+}
+
+#documentation {
+  text-align: left;
+  margin-top: 0.25rem;
+  margin-left: 16rem;
+  color: #B61A02;
+}
+
+#searchbox {
+  border: 1px solid rgba(0, 22, 22, 0.2);;
+  width: 17rem;
+  height: 2rem;
+  padding: 0.0625rem;
+}
+
+input[type=text] {
+  border: none;
+  background-color: transparent;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  padding-top: 0.35rem;
+  font-family: 'Alata', sans-serif;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+#responsive_search_bar {
+  display: none;
+}
+
+#navbar {
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  background-color: #FFF;
+  text-align: center;
+}
+
+#navbar ul {
+  height: 89%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  border-bottom: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  list-style: none;
+  width: 100%;
+  position: relative;
+  transition: color 0.5s;
+}
+
+.nav_top_border {
+  border-top: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+.navlink {
+  font-size: 1.563rem;
+}
+
+#title {
+  text-align: center;
+  font-size: 1.953rem;
+  margin: 1rem;
+  color: #02B692;
+}
+
+#homepage {
+  background-image:
+  linear-gradient(0deg,rgba(153, 194, 255, 0.2),
+  rgba(128, 179, 255, 0.3)),
+  url("https://i.ibb.co/YRmhR9P/P30-Pro-kv-ca.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+#homepage > img {
+  width: 100vw;
+  padding: 23% 30% 0 35%;
+}
+
+#copyright {
+  text-align:left;
+  font-size: 1rem;
+  width: 100px;
+  color: rgba(0, 22, 22, 0.4);
+}
+
+/* about.html */
+#about > video {
+  width: auto;
+  height: 82.5%;
+}
+
+/* specification.html */
+.size_specs {
+  list-style: none;
+}
+
+.size_values{
+  list-style: none;
+  color: rgba(0, 22, 22, 0.4);
+}
+
+#size_details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sizeflex {
+  display: flex;
+  justify-content: center;
+}
+
+#spec_colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 0 1.5rem 2.5rem;
+  border-top: 1px solid rgba(0, 22, 22, 0.4);
+  border-bottom: 1px solid rgba(0, 22, 22, 0.4);
+}
+
+.circle {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 22, 22, 0.4);
+}
+
+#amber_sunrise {
+  background: #FF5702;
+}
+
+#breathing_crystal {
+  background: #9FF7FF;
+}
+
+#black_circle {
+  background: #000;
+}
+
+#spec_display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 22, 22, 0.4);
+  list-style: none;
+}
+
+.spec_display_values {
+  color: rgba(0, 22, 22, 0.4);
+}
+
+#spec_processor {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 2rem 0 1.5rem 2.5rem;
+  border-bottom: 1px solid rgba(0, 22, 22, 0.4);
+}
+
+.spec_processor_specs {
+  color: rgba(0, 22, 22, 0.4);
+}
+
+#spec_url {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2rem 0;
+  color: rgba(0, 22, 22, 0.4);
+  font-size: 1rem;
+}
+
+#spec_url a {
+  color: #BADEFE;
+}
+
+/* navbar-sections: user_manual_table_of_contents */
+.main_flex > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.main_flex > div > li {
+  font-size: 1rem;
+}
+
+.main_layout > h2 {
+  font-size: 1.563rem;
+}
+
+.resource_reference {
+  margin: 10rem 0 1rem 0;
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(0, 22, 22, 0.4);
+}
+
+.resource_reference > a {
+  color: #BADEFE;
+}
+
+/* faqs.html */
+#faqs {
+  background-image:
+  linear-gradient(0deg,rgba(153, 194, 255, 0.1),
+  rgba(128, 179, 255, 0.4)),
+  url("https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/01@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.faqs_p30 {
+  font-size: 1.953rem;
+  margin-right: 15rem;
+}
+
+.faqs_reference {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  margin-right: 2rem;
+  color: rgba(0, 22, 22, 0.8);
+  font-size: 1rem;
+}
+
+/* resources.html */
+#resources {
+  background-image:
+  linear-gradient(0deg,rgba(153, 194, 255, 0.1),
+  rgba(128, 179, 255, 0.4)),
+  url("https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/phones/p30-pro/img/intro-hero/02@2x.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.resource_url {
+  font-size: 1.953rem;
+  bottom: 40%;
+}
+
+.resources_reference {
+  position: absolute;
+  margin-left: 1rem;
+  bottom: 0;
+  color: rgba(0, 22, 22, 0.8);
+  font-size: 1rem;
+}
+
+/* pseudo selector */
+::placeholder {
+  color: rgba(0, 22, 22, 0.4);
+  font-size: 1rem;
+}
+
+#searchbox:hover {
+  border: 2px solid #BADEFE;
+}
+
+#navbar a:hover {
+  color: #B65602;
+}
+
+#spec_url a:hover,
+.resource_reference > a:hover {
+  color: #0262B7;
+}
+
+.color_hover:hover  {
+  color: #BADEFE;
+}
+
+/* hidden until js */
+.nav_color {
+  color: #0262B7;
+  display: block;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main_toggle {
+  display: none;
+}

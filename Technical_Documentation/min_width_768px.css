@@ -1,0 +1,129 @@
+/* Responsive --desktop */
+@media only screen and (min-width: 768px) {
+  #searchbox {
+    right: 0;
+    margin: 1.5rem 1rem 1rem 2rem;
+    padding-left: 0.5rem;
+  }
+
+  #navbar {
+    position: fixed;
+    width: 18.75rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: left;
+  }
+
+  #homepage {
+    position: fixed;
+    margin-left: 10rem;
+    /* top: 8rem; can hide heading if heading enabled*/
+    z-index: -1;
+  }
+
+  /*about.html */
+  #about {
+    margin-top: 7.8rem;
+    margin-left: 18.75rem;
+    padding: 1% 0 1% 7.7%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /* specification.html */
+  .size_specs {
+    margin-left: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  .size_values{
+    margin-left: 7rem;
+  }
+
+  #size_details {
+    align-items: baseline;
+  }
+
+  .sizeflex {
+    margin-left: 18.75rem;
+  }
+
+  #spec_colors {
+    align-items: baseline;
+    padding: 2rem 0 1.5rem 2.5rem;
+  }
+
+  #spec_display {
+    align-items: baseline;
+    padding: 2rem 0 1.5rem 2.5rem;
+  }
+
+  #spec_display > div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .spec_display_specs,
+  .spec_display_values {
+    margin-left: 10rem;
+    margin-bottom: 1rem;
+  }
+
+  #spec_processor {
+    align-items: baseline;
+  }
+
+  #spec_processor > div {
+    width: 60vw;
+  }
+
+  .spec_processor_specs {
+    padding-left: 18%;
+    margin-bottom: 1rem;
+  }
+
+/* navbar-sections: user_manual_table_of_contents */
+  .main_flex > div > li {
+    margin: 1rem 4rem 0 2rem;
+    font-size: 1.25rem;
+  }
+
+  .main_layout {
+    margin-left: 18.75rem;
+    margin-top: 10.5rem;
+  }
+
+  .main_layout > h2 {
+    text-align: left;
+    margin: 0 0 2rem 3.5rem;
+    font-size: 2.44rem;
+  }
+
+/* faqs.html */
+  #faqs {
+    margin-left: 18.75rem;
+  }
+
+   .faqs_p30 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-bottom: 6rem;
+  }
+
+  .responsive_faqs_reference {
+    display: none;
+  }
+
+/* resources.html*/
+  #resources {
+    margin-left: 18.75rem;
+  }
+
+  .resource_url {
+    position: absolute;
+    margin-left: 10rem;
+  }
+}
